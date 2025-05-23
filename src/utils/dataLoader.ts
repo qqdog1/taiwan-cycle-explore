@@ -1,4 +1,3 @@
-
 import { DataStructure, Event, Participant } from '@/types';
 
 let cachedData: DataStructure | null = null;
@@ -13,14 +12,18 @@ export async function loadData(forceRefresh = false): Promise<DataStructure> {
   }
 
   try {
-    // 在實際應用中，這裡會從API或動態JSON檔案載入
-    const response = await fetch('/src/data/sampleData.json');
+    // Check if we're running in SSG/production mode with pre-built data
+    const isStaticBuild = import.meta.env.PROD;
+    const dataPath = isStaticBuild ? '/data/sampleData.json' : '/src/data/sampleData.json';
+    
+    const response = await fetch(dataPath);
     const data = await response.json();
     
     cachedData = data;
     lastFetch = now;
     
     console.log('資料載入完成:', new Date().toISOString());
+    console.log('載入模式:', isStaticBuild ? '靜態生成' : '動態載入');
     return data;
   } catch (error) {
     console.error('載入資料失敗:', error);

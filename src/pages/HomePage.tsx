@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Header } from '@/components/Header';
+import { SEO } from '@/components/SEO';
 import { RegionCard } from '@/components/RegionCard';
 import { EventCard } from '@/components/EventCard';
 import { loadData } from '@/utils/dataLoader';
@@ -36,6 +37,7 @@ export function HomePage() {
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-50">
+        <SEO />
         <Header />
         <div className="flex items-center justify-center py-20">
           <Loader2 className="h-8 w-8 animate-spin text-blue-600" />
@@ -48,6 +50,7 @@ export function HomePage() {
   if (!data) {
     return (
       <div className="min-h-screen bg-gray-50">
+        <SEO />
         <Header />
         <div className="text-center py-20">
           <p className="text-gray-600">載入資料失敗，請稍後再試</p>
@@ -58,6 +61,7 @@ export function HomePage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO />
       <Header />
       
       <main className="container mx-auto px-4 py-8">
