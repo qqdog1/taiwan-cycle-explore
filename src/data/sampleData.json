@@ -1,0 +1,216 @@
+
+{
+  "regions": [
+    {
+      "name": "台北市",
+      "years": [
+        {
+          "year": 2025,
+          "events": [
+            {
+              "id": "event001",
+              "title": "2025台北登山單車賽",
+              "summary": "台北市年度登山單車賽事，挑戰陽明山美景路線",
+              "date": "2025-06-15",
+              "location": "陽明山國家公園",
+              "description": "這是台北市年度最盛大的登山單車賽事，路線涵蓋陽明山國家公園的經典路段，全程約50公里，海拔爬升約1200公尺。適合有經驗的單車愛好者參與。",
+              "ld_json": {
+                "@context": "https://schema.org",
+                "@type": "SportsEvent",
+                "name": "2025台北登山單車賽",
+                "startDate": "2025-06-15",
+                "location": {
+                  "@type": "Place",
+                  "name": "陽明山國家公園",
+                  "address": "台北市北投區"
+                }
+              },
+              "participants": [
+                {
+                  "id": "user001",
+                  "name": "王小明",
+                  "detail": {
+                    "age": 28,
+                    "category": "男子組",
+                    "city": "台北市",
+                    "phone": "0912345678",
+                    "email": "wang@example.com"
+                  }
+                },
+                {
+                  "id": "user002",
+                  "name": "李美華",
+                  "detail": {
+                    "age": 32,
+                    "category": "女子組",
+                    "city": "新北市",
+                    "phone": "0923456789",
+                    "email": "li@example.com"
+                  }
+                },
+                {
+                  "id": "user003",
+                  "name": "陳志強",
+                  "detail": {
+                    "age": 45,
+                    "category": "壯年組",
+                    "city": "桃園市",
+                    "phone": "0934567890",
+                    "email": "chen@example.com"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "event002",
+              "title": "2025大稻埕河濱單車遊",
+              "summary": "輕鬆的河濱單車路線，適合親子同樂",
+              "date": "2025-04-20",
+              "location": "大稻埕碼頭",
+              "description": "沿著淡水河畔的平坦路線，全程約20公里，適合各年齡層參與。途經大稻埕、迪化街等歷史景點，結合運動與文化巡禮。",
+              "participants": [
+                {
+                  "id": "user004",
+                  "name": "張家豪",
+                  "detail": {
+                    "age": 35,
+                    "category": "親子組",
+                    "city": "台北市",
+                    "phone": "0945678901",
+                    "email": "zhang@example.com"
+                  }
+                },
+                {
+                  "id": "user005",
+                  "name": "林雅婷",
+                  "detail": {
+                    "age": 29,
+                    "category": "女子組",
+                    "city": "台北市",
+                    "phone": "0956789012",
+                    "email": "lin@example.com"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "year": 2024,
+          "events": [
+            {
+              "id": "event003",
+              "title": "2024台北馬拉松單車賽",
+              "summary": "配合台北馬拉松舉辦的單車賽事",
+              "date": "2024-12-15",
+              "location": "台北市政府前廣場",
+              "description": "配合台北馬拉松舉辦的特別單車賽事，路線經過台北市區重要地標。",
+              "participants": [
+                {
+                  "id": "user006",
+                  "name": "吳建志",
+                  "detail": {
+                    "age": 38,
+                    "category": "男子組",
+                    "city": "台北市",
+                    "phone": "0967890123",
+                    "email": "wu@example.com"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "新北市",
+      "years": [
+        {
+          "year": 2025,
+          "events": [
+            {
+              "id": "event004",
+              "title": "2025新北環保單車賽",
+              "summary": "結合環保議題的單車賽事",
+              "date": "2025-05-10",
+              "location": "新北市板橋區",
+              "description": "以環保為主題的單車賽事，推廣綠色交通理念。",
+              "participants": [
+                {
+                  "id": "user007",
+                  "name": "黃志明",
+                  "detail": {
+                    "age": 42,
+                    "category": "男子組",
+                    "city": "新北市",
+                    "phone": "0978901234",
+                    "email": "huang@example.com"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "台中市",
+      "years": [
+        {
+          "year": 2025,
+          "events": [
+            {
+              "id": "event005",
+              "title": "2025台中后豐鐵馬道賽",
+              "summary": "經典的后豐鐵馬道路線競賽",
+              "date": "2025-07-08",
+              "location": "后豐鐵馬道",
+              "description": "利用廢棄鐵道改建的經典單車路線，風景優美，適合各級選手參與。",
+              "participants": [
+                {
+                  "id": "user008",
+                  "name": "劉淑芬",
+                  "detail": {
+                    "age": 31,
+                    "category": "女子組",
+                    "city": "台中市",
+                    "phone": "0989012345",
+                    "email": "liu@example.com"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "latest_events": [
+    {
+      "event_id": "event002",
+      "title": "2025大稻埕河濱單車遊",
+      "summary": "輕鬆的河濱單車路線，適合親子同樂",
+      "date": "2025-04-20",
+      "region": "台北市",
+      "year": 2025
+    },
+    {
+      "event_id": "event004",
+      "title": "2025新北環保單車賽",
+      "summary": "結合環保議題的單車賽事",
+      "date": "2025-05-10",
+      "region": "新北市",
+      "year": 2025
+    },
+    {
+      "event_id": "event001",
+      "title": "2025台北登山單車賽",
+      "summary": "台北市年度登山單車賽事，挑戰陽明山美景路線",
+      "date": "2025-06-15",
+      "region": "台北市",
+      "year": 2025
+    }
+  ],
+  "last_updated": "2025-01-23T10:30:00Z"
+}
